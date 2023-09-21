@@ -1,5 +1,6 @@
 <script>
 	import { dijkstra, getNodesInShortestPathOrder } from '$lib/algorithms/dijkstra';
+	import github from '$lib/assets/github.svg';
 	import Grid from '$lib/components/Grid.svelte';
 	import { Button, Select } from 'flowbite-svelte';
 	import cloneDeep from 'lodash/cloneDeep';
@@ -120,11 +121,11 @@
 				<Button type="submit">Visualize</Button>
 			</form>
 		</div>
-		<!-- <div class="flex items-center justify-center">
-			<a href="https://github.com" target="_blank">
+		<div class="flex items-center justify-center">
+			<a href="https://github.com/labadiejoaco/pathfinding-visualizer" target="_blank">
 				<img src={github} alt="Github" class="h-8 w-8 min-h-[8] min-w-[8]" />
 			</a>
-		</div> -->
+		</div>
 	</header>
 	<div class="flex-1 flex items-center justify-center">
 		<Grid rows={ROWS} columns={COLUMNS} />
